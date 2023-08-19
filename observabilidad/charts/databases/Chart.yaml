@@ -22,3 +22,30 @@ version: 0.1.0
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "1.16.0"
+
+dependencies:
+  - name: mariadb
+    version: "11.4.6"
+    repository: https://charts.bitnami.com/bitnami
+    alias: mariadb
+    condition: mariadb.enabled
+  - name: elasticsearch
+    version: "19.10.6"
+    repository: https://charts.bitnami.com/bitnami
+    alias: elasticsearch
+    condition: elasticsearch.enabled
+  - name: mongodb
+    version: "13.6.7"
+    repository: https://charts.bitnami.com/bitnami
+    alias: mongodb
+    condition: mongodb.enabled
+  - name: postgresql-ha
+    version: "11.1.2"
+    repository: https://charts.bitnami.com/bitnami
+    alias: postgresqlha
+    condition: postgresqlha.enabled
+  - name: mariadb-galera
+    version: "7.4.14"
+    repository: https://charts.bitnami.com/bitnami
+    alias: mariadbgal
+    condition: mariadbgal.enabled

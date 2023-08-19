@@ -1,0 +1,18 @@
+dependencies:
+- name: mariadb
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.4.6
+- name: elasticsearch
+  repository: https://charts.bitnami.com/bitnami
+  version: 19.10.6
+- name: mongodb
+  repository: https://charts.bitnami.com/bitnami
+  version: 13.6.7
+- name: postgresql-ha
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.1.2
+- name: mariadb-galera
+  repository: https://charts.bitnami.com/bitnami
+  version: 7.4.14
+digest: sha256:a90c11319c96d34e9b10a15b9d9353afe5dce4eb5b40da94f540c8b9c2415460
+generated: "2023-08-18T22:05:27.4479839-06:00"
