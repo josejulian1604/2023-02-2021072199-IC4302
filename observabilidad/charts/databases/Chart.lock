@@ -2,6 +2,12 @@ dependencies:
 - name: mariadb
   repository: https://charts.bitnami.com/bitnami
   version: 11.4.6
+- name: mariadb
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.4.6
+- name: mariadb
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.4.6
 - name: elasticsearch
   repository: https://charts.bitnami.com/bitnami
   version: 19.10.6
@@ -14,5 +20,8 @@ dependencies:
 - name: mariadb-galera
   repository: https://charts.bitnami.com/bitnami
   version: 7.4.14
-digest: sha256:a90c11319c96d34e9b10a15b9d9353afe5dce4eb5b40da94f540c8b9c2415460
-generated: "2023-08-18T22:05:27.4479839-06:00"
+- name: mariadb-galera
+  repository: https://charts.bitnami.com/bitnami
+  version: 7.4.14
+digest: sha256:cc06021420918f5c43e2afd7b4d37637286b6c081d6b493118ee321729057b9a
+generated: "2023-09-06T23:59:01.0489367-06:00"

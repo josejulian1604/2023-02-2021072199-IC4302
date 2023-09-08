@@ -1,24 +1,56 @@
-mariadb:
+mariadb1:
   enabled: false
+  primary:
+    enabled: true
+    replicas: 2
   metrics:
     enabled: true
     serviceMonitor:
       enabled: true
       namespace: "monitoring"
+
+mariadb2:
+  enabled: false
+  primary:
+    enabled: true
+    replicas: 2
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      namespace: "monitoring"
+
+mariadb3:
+  enabled: false
+  primary:
+    enabled: true
+    replicas: 2
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      namespace: "monitoring"
+
 elasticsearch:
-  enabled: true
-  metrics:
-    enabled: true
-    serviceMonitor:
-      enabled: true
-      namespace: "monitoring"
-mongodb:
   enabled: false
   metrics:
     enabled: true
     serviceMonitor:
       enabled: true
       namespace: "monitoring"
+
+mongodb:
+  enabled: true
+  replicaSet:
+    enabled: true
+    name: myReplicaSet
+    size: 3
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      namespace: "monitoring"
+
 postgresqlha:
   enabled: false
   metrics:
@@ -26,7 +58,16 @@ postgresqlha:
     serviceMonitor:
       enabled: true
       namespace: "monitoring"
-mariadbgal:
+
+mariadbgal1:
+  enabled: false
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      namespace: "monitoring"
+      
+mariadbgal2:
   enabled: false
   metrics:
     enabled: true
